@@ -1,9 +1,16 @@
 const express = require("express");
 const dotenv = require("dotenv");
+const mongoose = require("mongoose");
 const notes = require("./DummyData/notes");
 
 const app = express();
 dotenv.config();
+
+//connecting to the database
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("Connected successfully to the database..."))
+  .catch(() => console.error("Could not connect to the database..."));
 
 app.get("/", (req, res) => {
   res.send("API is working...");

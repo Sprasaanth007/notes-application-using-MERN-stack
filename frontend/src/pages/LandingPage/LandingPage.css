@@ -1,0 +1,41 @@
+.main-row-landing-page {
+  min-height: 89vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-page-heading {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.buttons-landing-page {
+  margin-top: 5rem;
+}
+
+.buttons-landing-page button {
+  width: 10rem;
+}
+
+.notes-image {
+  height: 550px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .notes-image {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .notes-image {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .notes-image {
+    height: 300px;
+  }
+}

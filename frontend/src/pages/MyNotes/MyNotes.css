@@ -1,0 +1,21 @@
+.note-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.note-title {
+  margin: 0 5rem 0 0;
+}
+
+.create-new-button {
+  width: 15rem;
+}
+
+button.accordion-button.collapsed::after {
+  margin: 0;
+}
+
+div.card-header {
+  width: 100%;
+}
